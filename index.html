@@ -51,10 +51,6 @@
       >
         <div class="w-full md:w-2/3">
           <h1 class="text-3xl font-bold mb-5 md:text-4xl">QR Code Generator</h1>
-          <p class="mb-4">
-            QR Code allows smartphone users to access your websites simply and
-            quickly
-          </p>
           <p>
             Enter your URL below to generate a QR code and download the image.
           </p>
@@ -87,8 +83,8 @@
               "
             >
                 <option value="100">100 x 100</option>
-                <option value="200">200 x 200</option>
-                <option value="300" selected>300 x 300</option>
+                <option value="200" selected>200 x 200</option>
+                <option value="300">300 x 300</option>
                 <option value="400">400 x 400</option>
                 <option value="500">500 x 500</option>
                 <option value="600">600 x 600</option>
@@ -97,8 +93,10 @@
           </form>
         </div>
       </div>
+
+      
       <!-- GENERATED QR CODE  -->
-      <div class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+      <div id="generated" class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
         <!-- spinner -->
         <div id="spinner" role="status">
             <svg
